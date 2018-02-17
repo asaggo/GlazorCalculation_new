@@ -8,6 +8,31 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <FlipView HorizontalAlignment="Left" Margin="1056,442,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,70,0,0" Text="Width" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,120,0,0" Text="Height" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <Button x:Name="btnClickMe" Content="Click Me" HorizontalAlignment="Left" Margin="94,408,0,0" VerticalAlignment="Top" FontSize="24" Height="71" Width="143" Click="Click_ClickMe"/>
+        <TextBox x:Name="txtbWidth" HorizontalAlignment="Left" Margin="162,70,0,0" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.543,0.6" FontSize="22" Width="99" TextChanged="Width_Changed"/>
+        <TextBox x:Name="txtbHeight" HorizontalAlignment="Left" Margin="164,122,0,0" Text="" VerticalAlignment="Top" RenderTransformOrigin="0.543,0.6" FontSize="22" Width="99" TextChanged="Height_Changed"/>
+        <ComboBox x:Name="cbboxTintColor" HorizontalAlignment="Left" Margin="170,210,0,0" VerticalAlignment="Top" Width="136" FontSize="22" ItemsSource="{x:Bind color}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,213,0,0" Text="Tint Color" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <Slider x:Name="sliderQuantity" Width="200" Minimum="0" Maximum="100" HorizontalAlignment="Left" Margin="156,273,0,0" VerticalAlignment="Top" TickFrequency="10" TickPlacement="BottomRight" ValueChanged="Slider_ValueChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,275,0,0" Text="Quantity" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock x:Name="txtQuantity" HorizontalAlignment="Left" Margin="250,315,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,73,0,0" Text="Width" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,123,0,0" Text="Height" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,213,0,0" Text="Tint Color" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,275,0,0" Text="Quantity" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock x:Name="lblWidth" HorizontalAlignment="Left" Margin="570,73,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock x:Name="lblHeight" HorizontalAlignment="Left" Margin="570,123,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock x:Name="lblTintColor" HorizontalAlignment="Left" Margin="570,213,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock x:Name="lblQuantity" HorizontalAlignment="Left" Margin="570,275,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,330,0,0" Text="Length of Frame" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,370,0,0" Text="Area of Glass" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock x:Name="lblLengFrame" HorizontalAlignment="Left" Margin="650,330,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock x:Name="lblAreaGlass" HorizontalAlignment="Left" Margin="650,370,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,15,0,0" Text="Order Date" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
+        <TextBlock x:Name="lblOrderDate" HorizontalAlignment="Left" Margin="600,15,0,0" Text="mm/dd/yyyy" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22"/>
 
     </Grid>
 </Page>
